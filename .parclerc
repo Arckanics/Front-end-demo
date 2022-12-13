@@ -1,0 +1,14 @@
+{
+  "extends": "@parcel/config-default",
+  "optimizers": {
+    "*.js": ["@parcel/optimizer-esbuild"],
+    "*.css": ["@parcel/optimizer-css"]
+  },
+  "compressors": {
+    "*.{js,html,css}": [
+      "...",
+      "@parcel/compressor-gzip", 
+      "@parcel/compressor-brotli"
+    ]
+  }
+}
