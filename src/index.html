@@ -10,9 +10,9 @@
   <script type="module" src="./js/main.js"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#site-nav" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
+<body class="bg-dark" style="--bs-bg-opacity: .4;" data-bs-spy="scroll" data-bs-target="#site-nav" data-bs-smooth-scroll="true" tabindex="0">
   <!-- Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3 fs-4" id="site-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3 fs-4" id="site-nav">
     <section class="container-xxl ">
       <a class="navbar-brand fw-bold fs-3 flex-grow-1" href="/">Pleine lune</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,14 +27,17 @@
           <li class="nav-item">
             <a class="nav-link" href="#Members">Membres</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Event">Evenements</a>
+          </li>
         </ul>
       </div>
     </section>
   </nav>
   <!-- Accueil -->
-  <section id="Accueil" class="container-fluid p-4 bg-light">
-    <section class="container-xxl">
-      <h1 class="pb-4">Accueil</h1>
+  <section id="Accueil" class="container-fluid p-4 pt-5 bg-light">
+    <section class="container-xxl py-4 pt-5">
+      <h1 class="py-4">Accueil</h1>
       <section class="row justify-content-start">
 
         <div class="my-2 text-justify col-md-8">
@@ -67,9 +70,9 @@
     </section>
   </section>
   <!-- Membres -->
-  <section id="Members" class="container-fluid p-4 bg-secondary pb-5 mb-2" style="--bs-bg-opacity: .2;">
+  <section id="Members" class="container-fluid p-4 bg-secondary pb-5" style="--bs-bg-opacity: .2;">
 
-    <section class="container-xxl">
+    <section class="container-xxl py-4">
       <h1 class="pb-4">Nos Astronautes</h1>
       <section class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3 justify-content-start">
 
@@ -83,7 +86,7 @@
                 et cosmonaute soviétique, premier être humain à avoir effectué un vol dans l'espace au cours de la
                 mission Vostok 1, le 12 avril 1961, dans le cadre du programme spatial soviétique.</p>
               <a href="https://fr.wikipedia.org/wiki/Youri_Gagarine" target="_blank"
-                class="btn btn-primary">Wikipédia</a>
+                class="btn btn-info">Wikipédia</a>
             </div>
           </div>
         </div>
@@ -99,7 +102,7 @@
                 Hampshire) et mort le 21 juillet 1998 à Pebble Beach (Californie), est un aviateur naval, pilote
                 d'essai, astronaute et homme d'affaires américain. En 1961, il devient le premier Américain à voyager
                 dans l'espace et, en 1971, il est le cinquième homme à avoir marché sur la Lune.</p>
-              <a href="https://fr.wikipedia.org/wiki/Alan_Shepard" target="_blank" class="btn btn-primary">Wikipédia</a>
+              <a href="https://fr.wikipedia.org/wiki/Alan_Shepard" target="_blank" class="btn btn-info">Wikipédia</a>
             </div>
           </div>
         </div>
@@ -115,7 +118,7 @@
                 américaine (USAF) et un membre des Mercury Seven, le premier groupe d'astronautes sélectionnés par la
                 NASA pour le programme Mercury. Il fait également partie des programmes Gemini et Apollo.</p>
               <a href="https://fr.wikipedia.org/wiki/Virgil_Grissom" target="_blank"
-                class="btn btn-primary">Wikipédia</a>
+                class="btn btn-info">Wikipédia</a>
             </div>
           </div>
         </div>
@@ -132,7 +135,7 @@
                 mission Vostok 2. Âgé de 25 ans à l'époque, il est encore aujourd'hui l'être humain le plus jeune à être
                 allé dans l'espace dans le cadre d'un vol orbital.</p>
               <a href="https://fr.wikipedia.org/wiki/Guerman_Titov" target="_blank"
-                class="btn btn-primary">Wikipédia</a>
+                class="btn btn-info">Wikipédia</a>
             </div>
           </div>
         </div>
@@ -147,7 +150,7 @@
                 pilote de chasse de l'Armée de l'air française (grade de colonel), pilote d'essais, pilote de ligne et
                 instructeur pilote de ligne, pilote professionnel d'hélicoptères.</p>
               <a href="https://fr.wikipedia.org/wiki/Patrick_Baudry" target="_blank"
-                class="btn btn-primary">Wikipédia</a>
+                class="btn btn-info">Wikipédia</a>
             </div>
           </div>
         </div>
@@ -167,11 +170,91 @@
                 fait partie des six candidats retenus pour former le troisième groupe de spationautes européens
                 sélectionnés par l'Agence spatiale européenne.</p>
               <a href="https://fr.wikipedia.org/wiki/Thomas_Pesquet" target="_blank"
-                class="btn btn-primary">Wikipédia</a>
+                class="btn btn-info">Wikipédia</a>
             </div>
           </div>
         </div>
 
+      </section>
+    </section>
+  </section>
+
+  <section id="Event" class="container-fluid p-4 pt-5 mb-1 bg-light">
+    <section class="container-xxl py-2 mb-5">
+      <h1 class="pb-4">Evenements</h1>
+      <section class="row row-cols-1 row-cols-xxl-3 row-cols-lg-2 g-3 justify-content-start">
+        <div class="col">
+          <div class="card text-center border-secondary shadow h-100">
+            <div class="card-header">
+              <h5 class="card-title">Journée pédagogique de l'astrologie</h5>
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text">
+                Dans le cadre d'une journée pédagogique sur l'astrologie, vous pourrez rencontrez nos
+                austronautes qui vous expliquerons clairement leur points de vues sur les étoiles...
+              </p>
+            </div>
+
+            <div class="card-footer text-muted">
+              évenement passé
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center border-danger shadow h-100">
+            <div class="card-header">
+              <h5 class="card-title">Journée des dédicaces</h5>
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text">
+                Rencontrez nos astronautes et offrez vous des dédicaces ou interviews avec nos vedettes.
+              </p>
+            </div>
+
+            <div class="card-footer text-danger">
+              Annulé
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center border-success shadow h-100">
+            <div class="card-header">
+              <h5 class="card-title">Attraction</h5>
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text">
+                Ouverture du centre de simulation spatiales pour grand public. Possibilités dans ce sentir
+                dans "Apollo 11", "Columbia" et bien d'autres appareils.
+              </p>
+            </div>
+
+            <div class="card-footer text-success">
+              Dans 2 jours...
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center border-primary shadow h-100">
+            <div class="card-header">
+              <h5 class="card-title">Film: Le Grand froid</h5>
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text">
+                Film documentaire sur les ingénieurs et l'ingénerie spatial en général, vous pourrez 
+                voir des interviews de nos astraunotes ainsi que les locaux et expériences des 
+                plus grandes organisations spatiales de ce monde
+              </p>
+            </div>
+
+            <div class="card-footer text-primary">
+              Bientôt disponible
+            </div>
+          </div>
+        </div>
       </section>
     </section>
   </section>
