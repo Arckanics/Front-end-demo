@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pleine Lune</title>
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <link rel="stylesheet" href="scss/styles.scss">
 </head>
 
-<body class="bg-dark" style="--bs-bg-opacity: .4;" data-bs-spy="scroll" data-bs-target="#site-nav" data-bs-smooth-scroll="true" tabindex="0">
+<body class="bg-dark" style="--bs-bg-opacity: .4; position: relative;"  data-bs-spy="scroll" data-bs-target="#site-nav" data-bs-smooth-scroll="true" tabindex="0">
   <!-- Header / Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3 fs-4" id="site-nav">
     <section class="container-xxl ">
@@ -21,13 +22,13 @@
       <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#Accueil">Accueil</a>
+            <a class="nav-link" href="#Accueil" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Members">Membres</a>
+            <a class="nav-link" href="#Members" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Membres</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Event">Evenements</a>
+            <a class="nav-link" href="#Event" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Evenements</a>
           </li>
         </ul>
       </div>
@@ -69,8 +70,7 @@
     </section>
   </section>
   <!-- Membres -->
-  <section id="Members" class="container-fluid p-4 bg-secondary pb-5" style="--bs-bg-opacity: .2;">
-
+  <section id="Members" class="container-fluid p-4 bg-secondary pb-5" style="--bs-bg-opacity: .2;" data-bs-offset="50" tabindex="1">
     <section class="container-xxl py-4">
       <h1 class="pb-4">Nos Astronautes</h1>
       <section class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3 justify-content-start">
@@ -178,7 +178,7 @@
     </section>
   </section>
 
-  <section id="Event" class="container-fluid p-4 pt-5 mb-1 bg-light">
+  <section id="Event" class="container-fluid p-4 pt-5 mb-1 bg-light" tabindex="2">
     <section class="container-xxl py-2 mb-5">
       <h1 class="pb-4">Evenements</h1>
       <section class="row row-cols-1 row-cols-xxl-3 row-cols-lg-2 g-3 justify-content-start">
