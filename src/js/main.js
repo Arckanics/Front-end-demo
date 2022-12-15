@@ -1,13 +1,29 @@
 import * as bootstrap from 'bootstrap';
 
+const { ScrollSpy } = bootstrap
 
-console.log(bootstrap.ScrollSpy);
+const nav = {
+  root: document.body,
+  target: "#site-nav",
+  items: [...document.getElementById("site-nav").querySelectorAll('.nav-link')],
+  spy: new ScrollSpy(document.body, {
+    target: "#site-nav"
+  }),
+  offset: () => {
+    return document.querySelector("#site-nav").getBoundingClientRect().height
+  }
+}
 
-const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
+nav.items.map(i => {
+  i.onclick = (e) => {
+    let target = document.querySelector(i.getAttribute('href'))
+    let scrollPos = target.offsetTop - nav.offset()
 
-console.log(dataSpyList);
+    console.log(target.getBoundingClientRect());
 
-dataSpyList.forEach(dataSpyEl => {
-  let instance = bootstrap.ScrollSpy.getInstance(dataSpyEl)
-  console.log(instance)
+    nav.root.parentNode.scrollTo({
+      top: scrollPos,
+      behavior: 'smooth'
+    })
+  }
 })
