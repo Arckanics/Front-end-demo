@@ -21,6 +21,17 @@ html {
   min-height: calc(100vh - 38px);
 }
 
+#intro-img img {
+  max-width: 360px;
+  min-width: 220px;
+  width: 33%;
+}
+
+.content-box {
+  overflow: auto;
+  display: block;
+}
+
 
 @media screen and (min-width: 768px) {
   #footer {
