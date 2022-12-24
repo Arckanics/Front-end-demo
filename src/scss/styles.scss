@@ -21,10 +21,26 @@ html {
   min-height: calc(100vh - 38px);
 }
 
-#intro-img img {
+#intro-img {
   max-width: 360px;
   min-width: 220px;
   width: 33%;
+  img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #intro-img {
+    max-width: none;
+    min-width: none;
+    width: 100%;
+    float: none!important;
+    img {
+      width: 100%;
+    }
+  }
+  
 }
 
 .content-box {
