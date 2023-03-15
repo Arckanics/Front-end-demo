@@ -2,11 +2,12 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "boostrap": "^2.0.0",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.1",
-    "parcel": "^2.8.1",
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
     "sass": "^1.56.2"
   },
   "name": "front-end-demo",
@@ -15,7 +16,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rm -rf .parcel-cache dist && parcel",
-    "build": "rm -rf .parcel-cache dist build && parcel build --no-cache --dist-dir ./build --public-url ./ --no-content-hash"
+    "build": "rm -rf .parcel-cache dist build && parcel build --no-cache --dist-dir ./docs --public-url ./ --no-content-hash"
   },
   "source": "src/index.html",
   "repository": {
